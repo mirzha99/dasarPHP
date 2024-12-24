@@ -1,7 +1,7 @@
 <?php
 
 //ini  adalah single-line komentar
-//hanya belaku untuk 1 line
+//hanya belaku untuk 1 line yang biasanya untuk kasi tanda
 
 /* 
  ini adalah multi-line komentar
