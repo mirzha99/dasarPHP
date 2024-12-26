@@ -1,0 +1,8 @@
+buatkanlah file data.php dengan mengunakan system file lalu bisa di simpan data bentuk array didalam data.php
+
+fitur harus ada
+    1. tambah user
+    2. lihat user
+    3. cari user
+    4. edit user
+    5. hapus user
