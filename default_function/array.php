@@ -28,17 +28,28 @@ var_dump(end($array)); // mengabil data array paling terakhir
 
 echo "in_array \n";
 $ditemukan = false; //variabel menampung kondisi sekarang
-foreach($array as $user){//melakukan perulangan dari variabel array yang di aliaskan menjadi variabel user
-    if(in_array("elsa",$user)){ //in_array tidak bisa di gunakan dalam array multidemension in_arrayy hanya bisa mencari value bukan key
+foreach ($array as $user) { //melakukan perulangan dari variabel array yang di aliaskan menjadi variabel user
+    if (in_array("elsa", $user)) { //in_array tidak bisa di gunakan dalam array multidemension in_arrayy hanya bisa mencari value bukan key
         $ditemukan = true; //jika kondisi di temukan ubah variabel jadi true
         break;             //break untuk memberhentikan proses perulangan foreach
     }
 }
-if($ditemukan){
+if ($ditemukan) {
     echo "ditemukan \n";
-}else{
+} else {
     echo "tidak ditemukan \n";
 }
 
-echo "Countable array => ".count($array); // menghitung jumlah data array
+/**  
+array column mirip dengan foreach
+ $output = [];
+ foreach ($array as $user) {
+     $output[] = $user['nama'];
+ } 
+var_dump($output);
+ */
 
+echo "array column \n";
+$array_column = array_column($array, 'nama');
+var_dump($array_column);
+echo "Countable array => " . count($array); // menghitung jumlah data array
