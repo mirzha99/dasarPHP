@@ -1,2 +1,2 @@
 1. install php versi 8.3
-2. untuk menjalakan php nama.php
+2. untuk menjalakan path php nama.php
