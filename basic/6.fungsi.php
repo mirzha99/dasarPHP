@@ -48,5 +48,5 @@ echo "\n";
 var_dump(persegipanjang(3,3));
 var_dump(login('admin','456'));
 echo palindrome("kodok");
-echo "\n".factorial(10);
+echo "\n ".factorial(10);
 ?>
