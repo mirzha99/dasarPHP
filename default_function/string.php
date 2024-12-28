@@ -9,16 +9,16 @@ String Functions
 */
 $word = "Bangsawan Code";
 
-$rev = strrev($word);
+$rev = strrev($word); //membalikan string 
 echo "Rev : {$rev} \n";
 
-$toUpper = strtoupper($word);
+$toUpper = strtoupper($word);// string huruf kapital
 echo "Upper : {$toUpper} \n";
 
-$toLower = strtolower($word);
+$toLower = strtolower($word);// string huruf kecil
 echo "lower : {$toLower} \n";
 
-$subString = substr($word,1,2);
+$subString = substr($word,0,9);// menampilkan string dari 0 sampai  akhir kata output Bangsawan 
 echo "subString : {$subString} \n";
 
 $strsplit = str_split($word); //memecahkan value string menjadi array
