@@ -53,6 +53,18 @@ if ($jurusan == "IPA") {
 }
 echo "\n";
 
+echo "Ternary Operator\n";
+$password = "123";
+/**
+    Tenary Operator 
+hanya bisa membuat kondisi if else saja tidak bisa becabang
+dengan ternary operator kita bisa membuat kondisi dalam 1 baris 
+contoh 
+    (kondisi) ? (statement benar) : (statement salah);
+ */
+echo  ($password == "1231") ? "Password Benar\n" : "Password Salah\n"; 
+
+
 echo "Switch\n";
 $hari = "rabu";
 switch ($hari) {
