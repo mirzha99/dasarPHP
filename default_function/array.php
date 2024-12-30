@@ -52,4 +52,12 @@ var_dump($output);
 echo "array column \n";
 $array_column = array_column($array, 'nama');
 var_dump($array_column);
+
+echo "array combine \n";
+$key = ['name','age'];
+$value = ['za','25'];
+$array_combine = array_combine($key,$value);
+var_dump($array_combine);
+
+echo "array count \n";
 echo "Countable array => " . count($array); // menghitung jumlah data array
