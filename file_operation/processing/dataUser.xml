@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<user>
+    <id>
+    <iduser>U001</iduser>
+    <nama>Muhammad Mirza</nama>
+    <email>muhammad.mirza3107@gmail.com</email>
+    <alamat>
+        <provinsi>Aceh</provinsi>
+        <kabupaten>Pidie</kabupaten>
+        <kecematan>Tangse</kecematan>
+        <desa>Peunalom I</desa>
+    </alamat>
+    </id>
+
+    <id>
+    <iduser>U002</iduser>
+    <nama>Muhammad Azrim</nama>
+    <email>muhammad.azrim3107@gmail.com</email>
+    <alamat>
+        <provinsi>Aceh</provinsi>
+        <kabupaten>Pidie</kabupaten>
+        <kecematan>Tangse</kecematan>
+        <desa>Peunalom II</desa>
+    </alamat>
+    </id>
+</user>
