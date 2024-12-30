@@ -1,0 +1,7 @@
+Metode HTTP
+PHP memungkinkan penanganan metode HTTP, yang merupakan cara untuk menentukan tindakan yang akan dilakukan pada sumber daya yang 
+diidentifikasi oleh URL tertentu. Dalam PHP, array superglobal $_SERVER dapat digunakan untuk mengidentifikasi metode HTTP dari
+permintaan tertentu, biasanya GET, POST, PUT, DELETE atau HEAD. Misalnya, 
+untuk mengidentifikasi apakah suatu permintaan adalah permintaan POST, 
+Anda dapat menggunakan if ($_SERVER['REQUEST_METHOD'] == 'POST') { // your code here }.
+Penanganan yang lebih canggih dapat dilakukan dengan memanfaatkan pustaka PHP bawaan atau paket pihak ketiga.
