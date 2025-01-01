@@ -15,7 +15,20 @@ $msg = function ($msg, $status_code) {
 
 switch ($method) {
     case 'get':
-        echo "get";
+        //check di direktori uploads
+        if (is_dir('./uploads/')){
+            //scan semua data di folder uploads
+           $scan = scandir('./uploads/');
+           $dataFile =[];
+            foreach($scan as $file){
+               if($file !== "." && $file !==".."){
+                    $dataFile[] = ['nama_file'=>$file,'gambar'=>"http://localhost:3030/uploads/{$file}"];
+               }
+            }
+        $msg($dataFile,200);
+        }else{
+            echo "tidak ada";
+        }
     break;
     case 'post':
         //check apakah form file gambar ada ?
@@ -51,6 +64,23 @@ switch ($method) {
                 $msg("gambar gagal diupload",500);
             }
         }
+    break;
+    case 'delete':
+       // Membaca body request
+       $body = file_get_contents('php://input');
+       $data = json_decode($body, true); // Jika body dikirim dalam format JSON
+
+       if (isset($data['nama_file'])) {
+            $nama_file = $data['nama_file'];
+            if(file_exists("./uploads/{$nama_file}")){
+                unlink("./uploads/{$nama_file}");
+                $msg("data file {$nama_file} telah di hapus directory",200);
+            }else{
+                $msg("gagal menghapus file",300);
+            }
+       } else {
+           $msg("nama file tidak sesuai",404);
+       }
     break;
     default:
     $msg('method is not allowed',401);
