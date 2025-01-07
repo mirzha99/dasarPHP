@@ -1,4 +1,8 @@
 <?php 
+/**
+    password hash adalah function bawaan php yang mengubah rangkaian huruf yang rumit di sebut sebagai chipetext
+    password verify adalah function bawaan php yang memverifikasi password hash apakah cocok dengan password function ini mengembalikan nilai bool
+ */
 function menu(){
     echo "
     +======================+
