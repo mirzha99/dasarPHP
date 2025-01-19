@@ -56,7 +56,6 @@
         const dataUser = data.success.data;
         
         dataUser.forEach((data , index) => {
-            const i = 1;
             const row = document.createElement('tr');
             row.innerHTML=
                 `
